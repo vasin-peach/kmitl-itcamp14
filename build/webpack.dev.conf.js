@@ -22,8 +22,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // these devServer options should be customized in /config/index.js
   devServer: {
-    host: 'grabkeys.net',
-    port: 8081,
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
