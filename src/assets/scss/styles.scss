@@ -1,0 +1,179 @@
+$font-moku: 'Moku', sans-serif;
+
+@font-face {
+    font-family: 'Moku';
+    src: url('../fonts/MokuBrush-Regular.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Moku-bold';
+    src: url('../fonts/MokuBrush-ExtraBold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .block-welcome {
+        margin-top: 70vh !important;
+    }
+    .text-welcome {
+        font-size: 6.5vw !important;
+    }
+    .text-brand {
+        width: 100% !important;
+        .brand i{
+            margin-top: 3vh !important;
+        }
+        .text {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    .block-welcome {
+        .row {
+            width: 100% !important;
+        }
+        .text-welcome {
+            font-size: 5vw !important;
+        }
+    }
+    .text-brand {
+        width: 100% !important;
+        .text {
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .text-welcome {
+        .row {
+            width: 75% !important;
+        }
+    }
+    .text-brand {
+        width: 75% !important;
+    }
+}
+
+.app-comingsoon {
+    font-family: $font-moku;
+    font-size: 20px;
+    .block {
+        position: relative;
+        background: #0A1834;
+        color: #DFDFDF;
+        min-height: 100vh;
+        overflow: hidden;
+        .block-welcome {
+            margin-top: 77vh;
+            .text-welcome {
+                z-index: 8;
+                font-weight: bold;
+                font-size: 3.2vw;
+            }
+            .text-brand {
+                .col-md-4 {
+                    z-index: 8;
+                    .brand {
+                        i {
+                            padding: 15px;
+                            border-radius: 50%;
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+        .block-horizon {
+            z-index: 1;
+            position: absolute;
+            background: #112D56;
+            left: 0; right: 0;
+            bottom: 0;
+            top: 60vh;
+        }
+        .block-ground {
+            z-index: 4;
+            position: absolute;
+            left: 0; right: 0;
+            bottom: 0;
+            top: 57vh;
+            background:#08252D;
+            width: 120%;
+            margin-left: -10%;
+            margin-right: 10%;
+            border-radius: 200vh 200vh 0% 0% / 35vh 35vh 0% 0%;
+            -moz-border-radius: 200vh 200vh 0% 0% / 35vh  35vh 0% 0%;
+            -webkit-border-radius: 200vh 200vh 0% 0% / 35vh  35vh 0% 0%;
+        }
+        .block-road {
+            img {
+                z-index: 5;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 150vh;
+                top: 58vh;
+            }
+        }
+        .block-station {
+            img {
+                z-index: 4;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 33.5vh;
+                width: 20vh;
+            }
+        }
+        .block-mount {
+            img {
+                z-index: 3;
+                width: 50vh;
+                position: absolute;
+                left: 0;
+                top: 40vh;
+            }
+        }
+        .block-moon {
+            .moon {
+                position: absolute;
+                transform: translateX(-50%);
+                left: 50%;
+                border-radius: 50%;
+            }
+            .moon-1 {
+                z-index: 4;
+                top: 43vh;
+                width: 30vh; 
+                height: 30vh;
+                background: #E6E7E8;
+                box-shadow: 0 0 20vw 0 rgba(230, 231, 232, 0.5);
+            }
+            .moon-2 {
+                z-index: 3;
+                top: 36vh;
+                width: 45vh;
+                height: 45vh;
+                background: rgba(36, 72, 111, 0.5);
+            }
+            .moon-3 {
+                z-index: 2;
+                top: 31vh;
+                width: 55vh;
+                height: 55vh;
+                background: rgba(36, 72, 111, 0.25);
+            }
+            .moon-4 {
+                z-index: 2;
+                top: 22vh;
+                width: 75vh;
+                height: 75vh;
+                background: rgba(36, 72, 111, 0.25);
+            }
+        }
+    }
+}
