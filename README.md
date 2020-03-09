@@ -1,3 +1,5 @@
+IT CAMP was born from the intention of the elders. IT Lat Krabang Who want to give knowledge about IT to high school students so that you Getting to know more about the word "IT" is an important aid in choosing the path to enter university studies.
+
 # kmitl-itcamp14
 
 > KMITL ITCamp14 
